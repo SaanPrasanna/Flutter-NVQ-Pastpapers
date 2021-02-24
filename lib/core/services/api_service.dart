@@ -6,7 +6,7 @@ import 'package:pastpapers/core/services/api_key.dart';
 
 class APIService {
   static const String endpoint = "dev.rootgenesis.tk";
-  // static const String endpoint = "lkapi.ml";
+
   final clinet = http.Client();
   String apiKey = APIKey.apiKey;
 
