@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:pastpapers/core/services/api_key.dart';
 
 class APIService {
-  static const String endpoint = "dev.rootgenesis.tk";
+  static const String endpoint = "API_URL";
 
   final clinet = http.Client();
   String apiKey = APIKey.apiKey;
@@ -16,7 +16,7 @@ class APIService {
     };
 
     try {
-      final uri = Uri.http(endpoint, '/nvq.php', queryParameters);
+      final uri = Uri.http(endpoint, 'URL_ENDPOINT', queryParameters);
       final response = await clinet.get(
         uri,
         headers: {
